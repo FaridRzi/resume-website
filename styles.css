@@ -1,0 +1,140 @@
+/*
+ * Global styles for the résumé site
+ *
+ * This stylesheet defines a dark theme inspired by modern developer portfolios
+ * such as Risen. The palette uses deep charcoal backgrounds (#121212, #1c1c1c) and light text colours to maintain high contrast and readability. Accent colours emphasise links and call‑to‑action elements while preserving the sombre aesthetic. Media queries adapt typography for larger screens.
+ */
+
+/* Reset default margins and specify a system font stack */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+/* Anchor styles */
+a {
+  color: #64b5f6;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #a5d6ff;
+}
+
+/* Navigation bar */
+.header {
+  background-color: #1c1c1c;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+.nav-list li a {
+  font-weight: 600;
+  color: #e0e0e0;
+}
+.nav-list li a:hover {
+  color: #64b5f6;
+}
+
+/* Hero section */
+.hero h1 {
+  margin: 0;
+  font-size: 3rem;
+  color: #ffffff;
+}
+.hero .subtitle {
+  font-size: 1.25rem;
+  margin: 0.25rem 0;
+  color: #b3b3b3;
+}
+.hero p {
+  margin: 0.5rem 0;
+}
+.social-links {
+  margin-top: 1rem;
+}
+.social-links a {
+  margin-right: 1rem;
+}
+
+/* Section styles */
+.section {
+  padding: 3rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+.experience-item,
+.education-item {
+  margin-bottom: 1.5rem;
+}
+.experience-item h3,
+.education-item h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+.experience-duration,
+.education-duration {
+  font-size: 0.9rem;
+  color: #b3b3b3;
+}
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0;
+  margin: 0;
+}
+.skills-list li {
+  background-color: #1c1c1c;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+.contact-section p {
+  margin: 0.5rem 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #1c1c1c;
+  color: #b3b3b3;
+  font-size: 0.9rem;
+}
+
+/* Responsive typography adjustments */
+@media (min-width: 600px) {
+  .hero h1 {
+    font-size: 4rem;
+  }
+  .hero .subtitle {
+    font-size: 1.5rem;
+  }
+  .section h2 {
+    font-size: 2.25rem;
+  }
+}
