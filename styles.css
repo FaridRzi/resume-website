@@ -136,6 +136,40 @@ a:hover {
   margin: 0.5rem 0;
 }
 
+/* Quests in Progress */
+.quest-item {
+  margin-bottom: 1.5rem;
+}
+.language-progress {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.language-progress .level-label {
+  font-size: 0.9rem;
+  color: #b3b3b3;
+}
+.language-progress .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #555;
+}
+.language-progress .dot.completed,
+.language-progress .dot.current {
+  background-color: #64b5f6;
+}
+.language-progress .dot.current {
+  box-shadow: 0 0 0 2px #ffffff;
+}
+.quest-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+
 /* Footer */
 footer {
   text-align: center;
