@@ -31,9 +31,14 @@ a:hover {
 
 /* Navigation bar */
 .header {
+  background-image: url('1703079767432.jpeg');
+  background-size: cover;
+  background-position: center;
   background-color: #1c1c1c;
   padding: 2rem 1rem;
   text-align: center;
+  position: relative;
+  min-height: 60vh;
 }
 .nav-list {
   list-style: none;
@@ -70,6 +75,18 @@ a:hover {
 }
 .social-links a {
   margin-right: 1rem;
+}
+
+.profile-pic {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 3px solid #ffffff;
 }
 
 /* Section styles */
